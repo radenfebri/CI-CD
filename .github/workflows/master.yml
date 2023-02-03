@@ -1,7 +1,7 @@
 on:
   push:
     branches: [ master ]
-name: 🚀 Deploy website on push
+name: 🚀 Deploy website on push by SSH
 jobs:
   web-deploy:
     name: 🎉 Auto Deploy
@@ -14,8 +14,8 @@ jobs:
       uses: burnett01/rsync-deployments@4.1
       with:
         switches: -avzr --delete --exclude=".git" --exclude=".github"
-#         path: /
-        remote_path: /home/radenfebri/cicd
-        remote_host: 103.150.87.242
+        path: /
+        remote_path: /home/radenfebri/website
+        remote_host: youtube-radenfebri.my.id
         remote_user: radenfebri
-        remote_key: Febri2303
+        remote_key: ${{ secret.remote_key }}
