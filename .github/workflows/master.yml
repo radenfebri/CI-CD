@@ -16,7 +16,7 @@ jobs:
         with:
           host: youtube-radenfebri.my.id
           username: radenfebri
-          key: ${{ secret.remote_key }}
+          key: ${{ secrets.remote_key }}
           port: 22
           script:
             cd /home/radenfebri/website
