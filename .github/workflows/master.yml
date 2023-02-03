@@ -13,7 +13,7 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v0.1.7
       with:
-        host: youtube-radenfebri.my.id
+        host: 103.150.87.242
         username: radenfebri
         password: Febri2303
         port: 22
