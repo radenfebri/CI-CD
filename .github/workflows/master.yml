@@ -3,24 +3,23 @@ name: CI
 on:
   push:
     branches: [ master ]
-
-jobs:
-  build: 
-    runs-on: ubuntu-latest
     
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Deploy using ssh
-        uses: appleboy/ssh-action@master
-        with:
-          host: youtube-radenfebri.my.id
-          username: radenfebri
-          key: ${{ secrets.remote_key }}
-          port: 22
-          script:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v0.1.7
+      with:
+        host: youtube-radenfebri.my.id
+        username: radenfebri
+        password: Febri2303
+        port: 22
+        script: 
             cd /home/radenfebri/website
             git pull origin master
             git status
-          
+        
       
