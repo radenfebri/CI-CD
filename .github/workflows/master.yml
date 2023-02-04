@@ -18,5 +18,6 @@ jobs:
         password: Febri2303
         port: 22
         script: |
+          cd /home/radenfebri/website
           pwd
-          ls -la
+          
