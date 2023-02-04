@@ -18,4 +18,5 @@ jobs:
         password: Febri2303
         port: 22
         script: 
-            git pull origin master
+          cd /home/radenfebri/website
+          git pull origin master
