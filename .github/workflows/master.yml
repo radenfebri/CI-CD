@@ -18,7 +18,7 @@ jobs:
         password: Febri2303
         port: 22
         script: |
-          cd /home/radenfebri/website
-          git config --global --add safe.directory /home/radenfebri/website
-          git pull origin master
+          sudo cd /home/radenfebri/website
+          sudo git config --global --add safe.directory /home/radenfebri/website
+          sudo git pull origin master
           
