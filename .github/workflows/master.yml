@@ -21,5 +21,5 @@ jobs:
         script:
 #           cd ~/website
 #           git pull origin master
-            cd website
+            cd /website/
             pwd
