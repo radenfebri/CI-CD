@@ -19,5 +19,6 @@ jobs:
 #         key: ${{ secrets.REMOTE_KEY }}
         port: 22
         script:
-          cd ~/website
-          git pull origin master
+#           cd ~/website
+#           git pull origin master
+            pwd
