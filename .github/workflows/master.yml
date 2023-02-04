@@ -17,5 +17,6 @@ jobs:
         username: radenfebri
         password: Febri2303
         port: 22
-        script:
-          git pull origin master
+        script: |
+          pwd
+          ls -la
