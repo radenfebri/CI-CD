@@ -15,7 +15,7 @@ jobs:
       with:
         host: 103.150.87.242
         username: radenfebri
-        key: ${{ secrets.remote_key }}
+        password: Febri2303
         port: 22
         script: 
             cd /home/radenfebri/website
