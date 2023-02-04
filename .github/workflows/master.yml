@@ -19,5 +19,6 @@ jobs:
         port: 22
         script: |
           cd /home/radenfebri/website
+          git config --global --add safe.directory /home/radenfebri/website
           git pull origin master
           
