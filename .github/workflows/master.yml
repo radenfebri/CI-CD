@@ -16,10 +16,6 @@ jobs:
         host: 103.150.87.242
         username: radenfebri
         password: Febri2303
-#         key: ${{ secrets.REMOTE_KEY }}
         port: 22
         script:
-#           cd ~/website
-#           git pull origin master
-            cd /website/
-            pwd
+          git pull origin master
